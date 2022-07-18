@@ -37,7 +37,7 @@ Since the aim of this paper is to predict sequential track-skipping behaviour, i
 
 In particular, skip_previous and skip_prop_prior_to_track are found to be among the most important predictors of track-skipping behavior:
  
-<img src="readme_images/feature_importance.png" width="450">
+<img src="readme_images/feature_importance.png" width="550">
 
 
 ## 2. Encode categorical features
