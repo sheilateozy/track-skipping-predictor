@@ -58,7 +58,7 @@ I utilize a Bayesian Optimization search method with 5-fold cross validation in 
 This is as compared to using simpler hyperparameter search methods such as Grid Search and Random Search, where each hyperparameter combination searched during tuning is independent of the last. In contrast, Bayesian Optimization uses knowledge of previous iterations of the algorithm such that each new search is guided from previous search results. This allows the algorithm to obtain optimal hyperparameters in as few iterations as possible, thus reducing computational cost.
 
 # Still curious?
-I authored a research paper covering the details of my methodology and findings under a PhD-level Machine Learning class at Columbia. This paper was awarded the top mark in the class (full-mark grade).
+I authored a research paper covering the details of my methodology and findings when I took a PhD-level Machine Learning class at Columbia. This paper was awarded the top mark in the class (full-mark grade).
 
 You can find my paper <a href="https://github.com/sheilateozy/Spotify_Predicting-Track-Skipping/blob/main/research_paper.pdf">here</a> :) 
 
