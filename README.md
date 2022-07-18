@@ -1,6 +1,7 @@
 <h1> Predicting sequential track-skipping<br>XGBoost: Accuracy of 76.8%</h1>
 I competed in the Spotify Sequential Skip Prediction Challenge, and emerged top 7% out of 1350 participants.
 <br>
+<li> Windowed feature engineering for sequential information.
 <li> Regularized k-fold target encoding of categorical features.
 <li> Hyperparameter tuning using Bayesian Optimization.
 <li> Threshold-moving to minimize expected costs in real-world model deployment.
