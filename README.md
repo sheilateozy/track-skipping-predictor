@@ -34,6 +34,10 @@ Since the aim of this paper is to predict sequential track-skipping behaviour, i
 <br>
 <li>skip_prop_prior_to_track_SD: Depicts the standard deviation of skip_prop_prior_to_track at each point in time. This depicts the consistency of the user’s skipping action prior to the current track. For instance, skip_prop_prior_to_track_SD=0 on track 5 implies that the user had made the same action on all of the 4 prior tracks (either skipped all or not skipped all). We can therefore be more certain of the predictive power of skip_prop_prior_to_track for forecasting user action on this 5th track, since the user is very likely to also make the same action. As such, the lower the skip_prop_prior_to_track_SD, the more consistent the user’s past track-skipping behavior, and the more certain we are in predicting user action on the next track.
 
+In particular, skip_previous and skip_prop_prior_to_track are found to be among the most important predictors of track-skipping behavior:
+<img src="readme_images/feature_importance.png" width="650">
+
+
 ## 2. Encode categorical features
 I use regularized k-fold target encoding. The usage of k folds ensures that the target value of an observation is not used to compute its target-encoded predictors. Instead, other observations in the training data are used. The dataset is first split into k folds, and the means for each category in the 𝑖^𝑡ℎ fold is computed using data in the other k-1 folds. To further prevent overfitting, I additionally add random noise into the target-encoded values for each category. This provides extra regularization to the k-fold target encoding.
 
