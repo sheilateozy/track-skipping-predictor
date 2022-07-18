@@ -54,7 +54,7 @@ This is as compared to using simpler hyperparameter search methods such as Grid 
 # Still curious?
 I authored a research paper covering the details of my methodology and findings under a PhD-level Machine Learning class at Columbia. This paper was awarded the top mark in the class (full-mark grade).
 
-You can find my paper here: 
+You can find my paper here: <a href="https://github.com/sheilateozy/Spotify_Predicting-Track-Skipping/blob/main/research_paper.pdf">Paper</a>
 
 
 
