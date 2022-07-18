@@ -19,7 +19,7 @@ In this project, an FP occurs when a song is identified to be skipped and thus n
 On the other hand, a FN occurs when a song identified to not be skipped is in fact skipped by a user. Costs are incurred due to lower user satisfaction with the streaming service. This presents a much higher cost to Spotify. As such, the costs of FP and FN are unequal.
 
 I assume that a FN generates twice the cost of a FP for Spotify. For each decision threshold, I obtain the resulting confusion matrix and subsequently compute expected costs as 2𝐹𝑁 + 𝐹𝑃, resulting in the below graph:
-<img src="readme_images/threshold_moving.png" width="650">
+<img src="readme_images/threshold_moving.png" width="450">
 
 The optimal threshold is the one resulting in the minimum expected cost. This optimal threshold is found to be 0.2655, ie. a track is classified to be skipped as long as its predicted probability from the final XGBoost model is above 0.2655.
 
@@ -35,7 +35,7 @@ Since the aim of this paper is to predict sequential track-skipping behaviour, i
 <li>skip_prop_prior_to_track_SD: Depicts the standard deviation of skip_prop_prior_to_track at each point in time. This depicts the consistency of the user’s skipping action prior to the current track. For instance, skip_prop_prior_to_track_SD=0 on track 5 implies that the user had made the same action on all of the 4 prior tracks (either skipped all or not skipped all). We can therefore be more certain of the predictive power of skip_prop_prior_to_track for forecasting user action on this 5th track, since the user is very likely to also make the same action. As such, the lower the skip_prop_prior_to_track_SD, the more consistent the user’s past track-skipping behavior, and the more certain we are in predicting user action on the next track.
 
 In particular, skip_previous and skip_prop_prior_to_track are found to be among the most important predictors of track-skipping behavior:
-<img src="readme_images/feature_importance.png" width="650">
+<img src="readme_images/feature_importance.png" width="450">
 
 
 ## 2. Encode categorical features
