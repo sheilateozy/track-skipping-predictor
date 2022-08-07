@@ -17,7 +17,7 @@ I explore this important and understudied problem in music streaming by building
 1. Feature engineering to capture sequential information
 2. Encode categorical features using regularized k-fold target encoding
 3. Select metric of focus: F2-Score
-4. Train % tune XGBoost using Bayesian Optimization
+4. Train and tune XGBoost using Bayesian Optimization
 
 # Still curious?
 Check out this project on my website <a href="_____">here</a> :)
