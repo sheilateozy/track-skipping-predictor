@@ -20,6 +20,6 @@ I explore this important and understudied problem in music streaming by building
 4. Train and tune XGBoost using Bayesian Optimization
 
 # Still curious?
-Check out this project on my website <a href="_____">here</a> :)
+Check out this project on my website <a href="https://sheilateozy.github.io/#portfolio">here</a> :)
 
 
