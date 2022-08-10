@@ -1,5 +1,5 @@
 # Spotify competition: Predicting sequential track-skipping
-## Built XGBoost with 76.8% accuracy
+## Using XGBoost
 
 I competed in the Spotify Sequential Skip Prediction Challenge, and emerged top 7% out of 1350 participants.
 <br>
